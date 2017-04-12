@@ -1,16 +1,16 @@
-;;; global modes
+;;; package ---  global modes
+;;; Commentary:
 
-;; rainbow-delimiters global mode
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+;;; Code:
 
-;; auto complete global mode
+;; auto complete
 (ac-config-default)
 
-;; yas global mode
-(require 'yasnippet)
-(yas-reload-all)
-(add-hook 'prog-mode-hook #'yas-minor-mode)
-(define-key yas-minor-mode-map (kbd "<tab>") nil)
-(define-key yas-minor-mode-map (kbd "TAB") nil)
-(define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
+;; projectile
+
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
+
 (provide 'init-global-mode)
+;;; init-global-mode.el ends here
