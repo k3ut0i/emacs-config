@@ -3,17 +3,18 @@
 ;;; common config for all lisps
 
 ;;; Code:
+;;; does autoload make rest of hooks redundant?
 (autoload 'enable-paredit-mode "paredit" "Turn on paredit mode." t)
-(add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
-(add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
-(add-hook 'ielm-mode-hook #'enable-paredit-mode)
-(add-hook 'lisp-mode-hook #'enable-paredit-mode)
-(add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
-(add-hook 'scheme-mode-hook #'enable-paredit-mode)
 
-(add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
-(add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
-(add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
+(dolist (hook '(emacs-lisp-mode-hook
+		eval-expression-minibuffer-setup-hook
+		ielm-mode-hook
+		lisp-mode-hook
+		lisp-interaction-mode-hook
+		scheme-mode-hook))
+  (add-hook hook #'enable-paredit-mode)
+  (add-hook hook #'eldoc-mode))
+
 
 (provide 'init-lisp)
 ;;; init-lisp.el ends here

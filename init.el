@@ -2,7 +2,8 @@
 ;;; Commentary:
 
 ;;; Code:
-(add-to-list 'load-path (expand-file-name "custom" user-emacs-directory))
+(add-to-list 'load-path
+	     (expand-file-name "custom" user-emacs-directory))
 ;; custom edits
 
 (require 'init-package)
@@ -17,6 +18,9 @@
 (require 'init-emacs-lisp)
 (require 'init-common-lisp)
 (require 'init-org)
+(require 'init-plantuml)
+;(require 'init-org-page)
+(require 'init-abbrev)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

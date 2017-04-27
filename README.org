@@ -1,0 +1,10 @@
+* Emacs configuration files
+
+** Structure
+Basic configuration is in init.el and config specific to certain packages, modes is in _custom/init-*.el_.
+
+*** Org-mode
+org-mode configuration files are in custom/init-org*.el. 
+
+** CREDITS
+Many parts of this config have come from package manuals, docs and other emacs-config files, so crediting the source isn't really possible.
