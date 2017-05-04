@@ -11,7 +11,8 @@
 		ielm-mode-hook
 		lisp-mode-hook
 		lisp-interaction-mode-hook
-		scheme-mode-hook))
+		scheme-mode-hook
+		inferior-scheme-mode-hook))
   (add-hook hook #'enable-paredit-mode)
   (add-hook hook #'eldoc-mode))
 

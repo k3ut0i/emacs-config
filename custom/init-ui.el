@@ -7,8 +7,8 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (setq right-divider-width 0)
-
-(load-theme 'darkokai)
+(setq inhibit-startup-screen t)
+(load-theme 'monokai)
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
