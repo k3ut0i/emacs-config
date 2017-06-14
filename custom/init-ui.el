@@ -8,7 +8,7 @@
 (scroll-bar-mode -1)
 (setq right-divider-width 0)
 (setq inhibit-startup-screen t)
-(load-theme 'monokai)
+(load-theme 'afternoon)
 
 (provide 'init-ui)
 ;;; init-ui.el ends here

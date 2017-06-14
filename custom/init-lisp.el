@@ -12,9 +12,17 @@
 		lisp-mode-hook
 		lisp-interaction-mode-hook
 		scheme-mode-hook
-		inferior-scheme-mode-hook))
+		inferior-scheme-mode-hook
+		geiser-repl-mode-hook))
   (add-hook hook #'enable-paredit-mode)
-  (add-hook hook #'eldoc-mode))
+  (add-hook hook #'eldoc-mode)
+  (add-hook hook (lambda ()
+		   (flycheck-mode -1))))
+
+(dolist (hook '(geiser-repl-mode-hook
+		inferior-scheme-mode-hook
+		lisp-interaction-mode-hook))
+  (add-hook hook #'rainbow-delimiters-mode))
 
 
 (provide 'init-lisp)

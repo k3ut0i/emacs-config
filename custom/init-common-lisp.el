@@ -11,5 +11,9 @@
   (define-key slime-repl-mode-map
     (read-kbd-macro paredit-backward-delete-key) nil))
 (add-hook 'slime-repl-mode-hook #'override-slime-repl-bindings-with-paredit)
+
+(load "/home/keutoi/quicklisp/clhs-use-local.el" t)
+
+
 (provide 'init-common-lisp)
 ;;; init-common-lisp.el ends here

@@ -3,7 +3,8 @@
 
 ;;; Code:
 
-(setq scheme-program-name "guile")
-(setq geiser-scheme-implementation "guile")
+(setq scheme-program-name "guile"
+      geiser-active-implementations '(guile)
+      geiser-scheme-implementation 'guile)
 (provide 'init-scheme)
 ;;; init-scheme.el ends here

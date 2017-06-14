@@ -41,11 +41,12 @@
 	(org-agenda-files :maxlevel . 9)
 	("./" :maxlevel . 9)))
 
+(setq org-enforce-todo-dependencies t
+      org-agenda-dim-blocked-tasks t
+      org-enforce-todo-checkbox-dependencies t)
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "PAUSED(p)" "|" "DONE(d)")
-	(sequence"INIT(i)" "STARTED(s)" "PAUSED(p)" "|" "FINISHED(f)")
-	(sequence "|" "KILLED(k)")))
-
+      '((sequence "TODO(t)" "INIT(i)" "STARTED(s)" "PAUSED(p)"
+		  "|" "FINISHED(f)" "KILLED(k)")))
 (setq org-highest-priority ?A)
 (setq org-lowest-priority ?D)
 (setq org-default-priority ?D)

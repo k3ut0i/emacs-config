@@ -4,7 +4,7 @@
 
 ;;; Code:
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
-
+(add-hook 'prog-mode-hook 'show-smartparens-global-mode)
 (require 'yasnippet)
 (yas-reload-all)
 (add-hook 'prog-mode-hook #'yas-minor-mode)
@@ -15,5 +15,6 @@
 
 (add-hook 'prog-mode-hook #'flycheck-mode)
 
+(ac-config-default)
 (provide 'init-prog-mode)
 ;;; init-prog-mode.el ends here
