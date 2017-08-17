@@ -4,7 +4,8 @@
 
 ;;; Code:
 (add-hook 'haskell-mode-hook 'intero-mode)
-(setq intero-stack-executable "/home/keutoi/.local/bin/stack")
+(add-hook 'haskell-mode-hook 'smartparens-mode)
+(setq intero-stack-executable "/usr/bin/stack")
 
 (provide 'init-haskell)
 ;;; init-haskell.el ends here

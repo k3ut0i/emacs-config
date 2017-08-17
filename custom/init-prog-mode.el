@@ -15,6 +15,8 @@
 
 (add-hook 'prog-mode-hook #'flycheck-mode)
 
+(add-hook 'prog-mode-hook #'fci-mode)
+
 (ac-config-default)
 (provide 'init-prog-mode)
 ;;; init-prog-mode.el ends here

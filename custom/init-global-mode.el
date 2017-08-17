@@ -2,7 +2,12 @@
 ;;; Commentary:
 
 ;;; Code:
-(setq backup-directory-alist '(("." . ".~")))
+
+;; backup config.
+(setq backup-directory-alist '(("." . ".~"))
+      version-control t
+      delete-old-versions t)
+
 ;; auto complete
 (ac-config-default)
 

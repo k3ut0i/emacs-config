@@ -3,6 +3,12 @@
 ;;; just common lisp specific configuration.  If config valid for all Lisps look at init-lisp.el
 
 ;;; Code:
+
+(setq slime-lisp-implementations
+      '((sbcl ("/usr/bin/sbcl") :coding-system utf-8-unix)
+	(cmucl ("cmucl" "-quiet"))
+	(abcl ("/usr/bin/abcl"))
+	(ecl ("/usr/bin/ecl"))))
 (setq inferior-lisp-program "/usr/bin/sbcl")
 (setq slime-contribs '(slime-fancy))
 
@@ -13,7 +19,8 @@
 (add-hook 'slime-repl-mode-hook #'override-slime-repl-bindings-with-paredit)
 
 (load "/home/keutoi/quicklisp/clhs-use-local.el" t)
-
+(load "/home/keutoi/quicklisp/log4slime-setup.el" t)
+(global-log4slime-mode 1)
 
 (provide 'init-common-lisp)
 ;;; init-common-lisp.el ends here

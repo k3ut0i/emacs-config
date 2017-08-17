@@ -13,3 +13,6 @@ projectile.cache
 .cask
 var
 bookmarks
+eshell
+resources
+edts

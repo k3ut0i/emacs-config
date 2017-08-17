@@ -13,6 +13,7 @@
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c c") 'org-capture)
+(define-key global-map (kbd "C-c b") 'org-iswitchb)
 
 (setq org-directory "~/Documents/org")
 (setq org-agenda-files
@@ -45,8 +46,8 @@
       org-agenda-dim-blocked-tasks t
       org-enforce-todo-checkbox-dependencies t)
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "INIT(i)" "STARTED(s)" "PAUSED(p)"
-		  "|" "FINISHED(f)" "KILLED(k)")))
+      '((sequence "TODO(t)" "INIT(i)" "PAUS(p)"
+		  "|" "DONE(d)" "DEAD(k)")))
 (setq org-highest-priority ?A)
 (setq org-lowest-priority ?D)
 (setq org-default-priority ?D)
@@ -96,5 +97,7 @@
 
 (add-hook 'org-mode-hook 'prose-mode)
 
+(require 'ox-md)
+(add-to-list 'org-export-backends 'md)
 (provide 'init-org)
 ;;; init-org.el ends here

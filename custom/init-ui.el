@@ -8,7 +8,14 @@
 (scroll-bar-mode -1)
 (setq right-divider-width 0)
 (setq inhibit-startup-screen t)
-(load-theme 'afternoon)
+(load-theme 'monokai)
+
+;;; fci is enabled as a prog-mode-hook
+(setq fci-rule-width 1
+      fci-rule-color "blue")
+
+;;;
+
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
