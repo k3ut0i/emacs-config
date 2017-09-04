@@ -31,6 +31,8 @@
 
 (define-abbrev-table 'ampc-tagger-mode-abbrev-table '())
 
+(define-abbrev-table 'apropos-mode-abbrev-table '())
+
 (define-abbrev-table 'asn1-mode-abbrev-table
   '(
     ("a" "ALL" nil 0)
@@ -315,6 +317,10 @@
 
 (define-abbrev-table 'image-dired-thumbnail-mode-abbrev-table '())
 
+(define-abbrev-table 'inferior-moz-mode-abbrev-table '())
+
+(define-abbrev-table 'inferior-python-mode-abbrev-table '())
+
 (define-abbrev-table 'java-mode-abbrev-table
   '(
    ))
@@ -330,6 +336,10 @@
 (define-abbrev-table 'latex-mode-abbrev-table '())
 
 (define-abbrev-table 'lisp-mode-abbrev-table '())
+
+(define-abbrev-table 'lua-mode-abbrev-table
+  '(
+   ))
 
 (define-abbrev-table 'markdown-mode-abbrev-table '())
 
@@ -381,6 +391,12 @@
 
 (define-abbrev-table 'prolog-mode-abbrev-table '())
 
+(define-abbrev-table 'python-mode-abbrev-table '())
+
+(define-abbrev-table 'python-mode-skeleton-abbrev-table '())
+
+(define-abbrev-table 'realgud:info-mode-abbrev-table '())
+
 (define-abbrev-table 'scala-mode-abbrev-table '())
 
 (define-abbrev-table 'scheme-mode-abbrev-table '())
@@ -427,9 +443,7 @@
 
 (define-abbrev-table 'tuareg-interactive-mode-abbrev-table '())
 
-(define-abbrev-table 'tuareg-mode-abbrev-table
-  '(
-   ))
+(define-abbrev-table 'tuareg-mode-abbrev-table '())
 
 (define-abbrev-table 'url-cookie-mode-abbrev-table '())
 
