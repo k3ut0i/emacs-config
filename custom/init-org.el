@@ -8,6 +8,8 @@
 (require 'org-clock)
 (require 'org-archive)
 (require 'package)
+(require 'init-julia) ; for org babel julia invocation
+
 
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (define-key global-map (kbd "C-c l") 'org-store-link)
@@ -57,6 +59,11 @@
 	(?C . (:foreground "green"))
 	(?D . (:foreground "orange"))))
 
+
+(setq org-confirm-babel-evaluate nil)
+(add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
+(add-hook 'org-mode-hook 'org-display-inline-images)
+
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((emacs-lisp . t)
@@ -66,7 +73,8 @@
    (scheme . t)
    (sqlite . t)
    (ditaa . t)
-   (plantuml . t)))
+   (plantuml . t)
+   (julia . t)))
 
 (setq org-plantuml-jar-path "/opt/plantuml/plantuml.jar")
 (setq org-ditaa-jar-path "/usr/share/java/ditaa/ditaa-0_9.jar")
