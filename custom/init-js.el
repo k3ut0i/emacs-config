@@ -20,5 +20,10 @@
 (define-key js2-mode-map (kbd "C-k") #'js2r-kill)
 (define-key js-mode-map (kbd "M-.") nil)
 
+(require 'xref-js2)
+(add-hook 'js2-mode-hook
+	  (lambda ()
+	    (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)))
+(define-key esc-map "." #'xref-find-definitions)
 (provide 'init-js)
 ;;; init-js.el ends here

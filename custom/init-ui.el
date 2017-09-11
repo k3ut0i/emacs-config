@@ -8,11 +8,11 @@
 (scroll-bar-mode -1)
 (setq right-divider-width 0)
 (setq inhibit-startup-screen t)
-(load-theme 'monokai)
+(load-theme 'sanityinc-tomorrow-night)
 
 ;;; fci is enabled as a prog-mode-hook
 (setq fci-rule-width 1
-      fci-rule-color "blue")
+      fci-rule-color "black")
 
 ;;;
 
