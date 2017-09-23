@@ -3,6 +3,7 @@
 
 
 ;;; Code:
+(require 'projectile)
 (add-to-list 'projectile-globally-ignored-directories ".\~")
 
 (provide 'init-projectile)

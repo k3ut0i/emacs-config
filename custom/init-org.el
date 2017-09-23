@@ -25,7 +25,7 @@
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/Documents/org/gtd.org" "Tasks")
 	 "* TODO %?\n %i\n %a" :clock-in t :clock-resume t)
-	("j" "Journal" entry (file+datetree "~/Documents/org/journal.org" "Journal")
+	("j" "Journal" entry (file+datetree "~/Documents/org/journal.org")
 	 "* %?\nEntered on %U\n %i\n %a")
 	("s" "Secure" entry (file+datetree "~/Documents/org/secure.org" "Secure")
 	 "* %?\nEntered on %U\n %i\n %a")))

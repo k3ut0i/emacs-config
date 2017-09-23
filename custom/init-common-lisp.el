@@ -11,6 +11,8 @@
 	(ecl ("/usr/bin/ecl"))))
 (setq inferior-lisp-program "/usr/bin/sbcl")
 (setq slime-contribs '(slime-fancy))
+(add-to-list 'slime-contribs 'slime-autodoc)
+
 
 (add-hook 'slime-repl-mode-hook (lambda () (paredit-mode +1)))
 (defun override-slime-repl-bindings-with-paredit ()
@@ -22,5 +24,7 @@
 (load "/home/keutoi/quicklisp/log4slime-setup.el" t)
 (global-log4slime-mode 1)
 
+;; key binding for slime selector 
+(global-set-key "\C-cs" 'slime-selector)
 (provide 'init-common-lisp)
 ;;; init-common-lisp.el ends here
