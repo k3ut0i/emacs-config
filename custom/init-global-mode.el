@@ -12,14 +12,16 @@
 ;;(ac-config-default)
 (add-hook 'after-init-hook 'global-company-mode)
 (global-set-key (kbd "<C-return>") 'company-complete)
-
+(eval-after-load "company"
+  '(diminish 'company-mode "c"))
 
 ;; projectile
 
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
-
+(eval-after-load "projectile"
+  '(diminish 'projectile-mode "p"))
 
 
 (provide 'init-global-mode)

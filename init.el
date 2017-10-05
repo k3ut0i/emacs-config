@@ -55,6 +55,8 @@
 			     init-scala
 			     init-rust
 			     init-julia
+			     init-coq
+			     init-smalltalk
 
 			     init-comint
 
@@ -82,7 +84,7 @@
    [default default default italic underline success warning error])
  '(custom-safe-themes
    (quote
-    ("6ee6f99dc6219b65f67e04149c79ea316ca4bcd769a9e904030d38908fd7ccf9" "3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" "9492cf1ac00c8a1f7130a867a97404dfeb6727801c6b2b40b853b91543f7af67" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "f78de13274781fbb6b01afd43327a4535438ebaeec91d93ebdbba1e3fba34d3c" "70403e220d6d7100bae7775b3334eddeb340ba9c37f4b39c189c2c29d458543b" "28ec8ccf6190f6a73812df9bc91df54ce1d6132f18b4c8fcc85d45298569eb53" default)))
+    ("67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "551596f9165514c617c99ad6ce13196d6e7caa7035cea92a0e143dbe7b28be0e" "946e871c780b159c4bb9f580537e5d2f7dba1411143194447604ecbaf01bd90c" "bcc6775934c9adf5f3bd1f428326ce0dcd34d743a92df48c128e6438b815b44f" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "c79c2eadd3721e92e42d2fefc756eef8c7d248f9edefd57c4887fbf68f0a17af" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "b563a87aa29096e0b2e38889f7a5e3babde9982262181b65de9ce8b78e9324d5" "b59d7adea7873d58160d368d42828e7ac670340f11f36f67fa8071dbf957236a" "6ee6f99dc6219b65f67e04149c79ea316ca4bcd769a9e904030d38908fd7ccf9" "3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" "9492cf1ac00c8a1f7130a867a97404dfeb6727801c6b2b40b853b91543f7af67" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "f78de13274781fbb6b01afd43327a4535438ebaeec91d93ebdbba1e3fba34d3c" "70403e220d6d7100bae7775b3334eddeb340ba9c37f4b39c189c2c29d458543b" "28ec8ccf6190f6a73812df9bc91df54ce1d6132f18b4c8fcc85d45298569eb53" default)))
  '(diary-entry-marker (quote font-lock-variable-name-face))
  '(elfeed-feeds
    (quote
@@ -109,7 +111,7 @@ static char *note[] = {
 \"######....\",
 \"#######..#\" };")))
  '(flycheck-color-mode-line-face-to-color (quote mode-line-buffer-id))
- '(gnus-logo-colors (quote ("#1ec1c4" "#bababa")))
+ '(gnus-logo-colors (quote ("#1ec1c4" "#bababa")) t)
  '(gnus-mode-line-image-cache
    (quote
     (image :type xpm :ascent center :data "/* XPM */
@@ -132,10 +134,16 @@ static char *gnus-pointer[] = {
 \"######..###.######\",
 \"###....####.######\",
 \"###..######.######\",
-\"###########.######\" };")))
+\"###########.######\" };")) t)
+ '(org-file-apps
+   (quote
+    ((auto-mode . emacs)
+     ("\\.mm\\'" . default)
+     ("\\.x?html?\\'" . default)
+     ("\\.pdf\\'" . "evince %s"))))
  '(package-selected-packages
    (quote
-    (abyss-theme airline-themes alect-themes anti-zenburn-theme hc-zenburn-theme zenburn-theme ag gxref helm-xref xref-js2 ess julia-repl ob-lfe pdf-tools fish-mode toml-mode cargo flymake-rust newlisp-mode opencl-mode company ob-fsharp ob-kotlin moz moz-controller blog-admin hexo ampc ada-mode ada-ref-man coffee-mode lfe-mode context-coloring yaml-tomato yaml-mode xterm-title xterm-keybinder xterm-frobs web-mode-edit-element w3m utop tuareg synonyms sphinx-mode sphinx-frontend sphinx-doc smartparens slime-annot scheme-complete rust-playground react-snippets rainbow-delimiters psci psc-ide perl6-mode pastebin parsec paredit pandoc ox-rst ox-gfm ox-epub ox-asciidoc org-plus-contrib org-page org-edit-latex ob-sql-mode ob-rust ob-redis ob-prolog ob-nim ob-http ob-go ob-elixir ob-diagrams ob-coffee nodejs-repl nim-mode multi-web-mode monokai-theme markdown-toc markdown-mode+ maker-mode magit luarocks ledger-mode latex-preview-pane latex-math-preview latex-extra langtool julia-shell json-mode js2-refactor ix ivy-todo ivy-pages irony-eldoc intero ini-mode indent-guide hippie-expand-slime helm-themes helm-swoop helm-smex helm-rhythmbox helm-projectile helm-org-rifle helm-make helm-hoogle helm-gtags helm-dictionary helm-company helm-cider-history helm-cider haskell-snippets groovy-mode graphviz-dot-mode graphql-mode go-snippets go-projectile go-playground gnuplot-mode gnuplot gist gh-md ggtags flymake-lua flycheck-yamllint flycheck-rust flycheck-rebar3 flycheck-purescript flycheck-plantuml flycheck-perl6 flycheck-ocaml flycheck-nim flycheck-mix flycheck-mercury flycheck-ledger flycheck-joker flycheck-irony flycheck-haskell flycheck-elixir flycheck-dogma flycheck-dialyxir flycheck-credo flycheck-clojure fill-column-indicator etags-table etags-select ensime emacsql-sqlite emacsql-psql emacsql-mysql elm-yasnippets elm-mode elixir-yasnippets elfeed-goodies ediprolog docbook-snippets docbook darkokai-theme counsel-projectile company-math company-lua company-irony-c-headers company-irony company-ghci company-erlang company-emacs-eclim company-distel company-c-headers company-bibtex company-auctex company-anaconda common-lisp-snippets color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized cmake-mode clomacs clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking cider-eval-sexp-fu chicken-scheme cask-mode cask c-eldoc bison-mode auctex-lua auctex-latexmk asn1-mode angular-snippets afternoon-theme adoc-mode)))
+    (geiser moe-theme diminish cyphejor shampoo company-coq coq-commenter package-build shut-up epl git commander f dash s abyss-theme airline-themes alect-themes anti-zenburn-theme hc-zenburn-theme zenburn-theme ag gxref helm-xref xref-js2 ess julia-repl ob-lfe pdf-tools fish-mode toml-mode cargo flymake-rust newlisp-mode opencl-mode company ob-fsharp ob-kotlin moz moz-controller blog-admin hexo ampc ada-mode ada-ref-man coffee-mode lfe-mode context-coloring yaml-tomato yaml-mode xterm-title xterm-keybinder xterm-frobs web-mode-edit-element w3m utop tuareg synonyms sphinx-mode sphinx-frontend sphinx-doc smartparens slime-annot scheme-complete rust-playground react-snippets rainbow-delimiters psci psc-ide perl6-mode pastebin parsec paredit pandoc ox-rst ox-gfm ox-epub ox-asciidoc org-plus-contrib org-page org-edit-latex ob-sql-mode ob-rust ob-redis ob-prolog ob-nim ob-http ob-go ob-elixir ob-diagrams ob-coffee nodejs-repl nim-mode multi-web-mode monokai-theme markdown-toc markdown-mode+ maker-mode magit luarocks ledger-mode latex-preview-pane latex-math-preview latex-extra langtool julia-shell json-mode js2-refactor ix ivy-todo ivy-pages irony-eldoc intero ini-mode indent-guide hippie-expand-slime helm-themes helm-swoop helm-smex helm-rhythmbox helm-projectile helm-org-rifle helm-make helm-hoogle helm-gtags helm-dictionary helm-company helm-cider-history helm-cider haskell-snippets groovy-mode graphviz-dot-mode graphql-mode go-snippets go-projectile go-playground gnuplot-mode gnuplot gist gh-md ggtags flymake-lua flycheck-yamllint flycheck-rust flycheck-rebar3 flycheck-purescript flycheck-plantuml flycheck-perl6 flycheck-ocaml flycheck-nim flycheck-mix flycheck-mercury flycheck-ledger flycheck-joker flycheck-irony flycheck-haskell flycheck-elixir flycheck-dogma flycheck-dialyxir flycheck-credo flycheck-clojure fill-column-indicator etags-table etags-select ensime emacsql-sqlite emacsql-psql emacsql-mysql elm-yasnippets elm-mode elixir-yasnippets elfeed-goodies ediprolog docbook-snippets docbook darkokai-theme counsel-projectile company-math company-lua company-irony-c-headers company-irony company-ghci company-erlang company-emacs-eclim company-distel company-c-headers company-bibtex company-auctex company-anaconda common-lisp-snippets color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized cmake-mode clomacs clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking cider-eval-sexp-fu chicken-scheme cask-mode cask c-eldoc bison-mode auctex-lua auctex-latexmk asn1-mode angular-snippets afternoon-theme adoc-mode)))
  '(safe-local-variable-values
    (quote
     ((eval progn

@@ -15,15 +15,16 @@
 		inferior-scheme-mode-hook
 		geiser-repl-mode-hook))
   (add-hook hook #'enable-paredit-mode)
-  (add-hook hook #'eldoc-mode)
   (add-hook hook (lambda ()
 		   (flycheck-mode -1))))
-
+(add-hook 'emacs-lisp-mode-hook #'eldoc-mode)
+(add-hook 'lisp-interaction-mode-hook #'eldoc-mode)
 (dolist (hook '(geiser-repl-mode-hook
 		inferior-scheme-mode-hook
 		lisp-interaction-mode-hook))
   (add-hook hook #'rainbow-delimiters-mode))
 
-
+(eval-after-load "paredit"
+  '(diminish 'paredit-mode "()"))
 (provide 'init-lisp)
 ;;; init-lisp.el ends here

@@ -45,6 +45,7 @@
 (helm-autoresize-mode 1)
 (helm-mode 1)
 
-
+(eval-after-load "helm-mode"
+  '(diminish 'helm-mode "h"))
 (provide 'init-helm)
 ;;; init-helm.el ends here
