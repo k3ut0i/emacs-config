@@ -17,34 +17,9 @@
 ;;; airline
 ;;(require 'airline-themes)
 ;;(load-theme 'airline-badwolf)
-(load-theme 'zenburn)
+(load-theme 'sanityinc-solarized-dark)
 
 ;;; Major mode names shorten using Cyphejor
-(require 'cyphejor)
-(setq
- cyphejor-rules
- '(:upcase
-   ("bookmark"    "→")
-   ("buffer"      "β")
-   ("diff"        "Δ")
-   ("dired"       "δ")
-   ("emacs"       "ε")
-   ("common"      "c")
-   ("inferior"    "i" :prefix)
-   ("interaction" "i" :prefix)
-   ("interactive" "i" :prefix)
-   ("lisp"        "λ" :postfix)
-   ("menu"        "▤" :postfix)
-   ("mode"        "")
-   ("package"     "↓")
-   ("python"      "π")
-   ("shell"       "sh" :postfix)
-   ("text"        "ξ")
-   ("wdired"      "↯δ")
-   ("info"        "ℐ")
-   ("scheme"      "𝒮")))
-(cyphejor-mode 1)
-
 ;;; Minor mode names
 ;;; diminish works but must be evaluated after the mode is enabled.
 ;;; So I'm shifting this to their respective enabled places

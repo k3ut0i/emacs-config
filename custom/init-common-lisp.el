@@ -21,8 +21,10 @@
 (add-hook 'slime-repl-mode-hook #'override-slime-repl-bindings-with-paredit)
 
 (load "/home/keutoi/quicklisp/clhs-use-local.el" t)
-(load "/home/keutoi/quicklisp/log4slime-setup.el" t)
-(global-log4slime-mode 1)
+
+;; color doesn't work well with log4slime mode.
+;(load "/home/keutoi/quicklisp/log4slime-setup.el" t)
+;(global-log4slime-mode 1)
 
 ;; key binding for slime selector 
 (global-set-key "\C-cs" 'slime-selector)

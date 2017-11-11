@@ -91,27 +91,15 @@
 
 (define-abbrev-table 'help-mode-abbrev-table '())
 
-(define-abbrev-table 'html-mode-abbrev-table '())
-
 (define-abbrev-table 'ibuffer-mode-abbrev-table '())
 
 (define-abbrev-table 'idl-mode-abbrev-table '())
 
 (define-abbrev-table 'inferior-julia-mode-abbrev-table '())
 
-(define-abbrev-table 'inferior-moz-mode-abbrev-table '())
-
 (define-abbrev-table 'java-mode-abbrev-table
   '(
    ))
-
-(define-abbrev-table 'js-jsx-mode-abbrev-table '())
-
-(define-abbrev-table 'js-mode-abbrev-table '())
-
-(define-abbrev-table 'js2-jsx-mode-abbrev-table '())
-
-(define-abbrev-table 'js2-mode-abbrev-table '())
 
 (define-abbrev-table 'julia-mode-abbrev-table '())
 
@@ -129,8 +117,6 @@
 
 (define-abbrev-table 'occur-mode-abbrev-table '())
 
-(define-abbrev-table 'org-export-stack-mode-abbrev-table '())
-
 (define-abbrev-table 'org-mode-abbrev-table '())
 
 (define-abbrev-table 'outline-mode-abbrev-table '())
@@ -147,33 +133,17 @@
 
 (define-abbrev-table 'select-tags-table-mode-abbrev-table '())
 
-(define-abbrev-table 'sgml-mode-abbrev-table '())
-
 (define-abbrev-table 'shell-mode-abbrev-table '())
-
-(define-abbrev-table 'sldb-mode-abbrev-table '())
-
-(define-abbrev-table 'slime-compiler-notes-mode-abbrev-table '())
-
-(define-abbrev-table 'slime-connection-list-mode-abbrev-table '())
-
-(define-abbrev-table 'slime-fuzzy-completions-mode-abbrev-table '())
-
-(define-abbrev-table 'slime-inspector-mode-abbrev-table '())
-
-(define-abbrev-table 'slime-thread-control-mode-abbrev-table '())
-
-(define-abbrev-table 'slime-trace-dialog--detail-mode-abbrev-table '())
-
-(define-abbrev-table 'slime-trace-dialog-mode-abbrev-table '())
-
-(define-abbrev-table 'slime-xref-mode-abbrev-table '())
 
 (define-abbrev-table 'snippet-mode-abbrev-table '())
 
 (define-abbrev-table 'special-mode-abbrev-table '())
 
+(define-abbrev-table 'speedbar-mode-abbrev-table '())
+
 (define-abbrev-table 'tabulated-list-mode-abbrev-table '())
+
+(define-abbrev-table 'tar-mode-abbrev-table '())
 
 (define-abbrev-table 'text-mode-abbrev-table '())
 

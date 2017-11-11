@@ -13,7 +13,7 @@
 (add-hook 'after-init-hook 'global-company-mode)
 (global-set-key (kbd "<C-return>") 'company-complete)
 (eval-after-load "company"
-  '(diminish 'company-mode "c"))
+  '(diminish 'company-mode "[C]"))
 
 ;; projectile
 
@@ -21,7 +21,7 @@
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
 (eval-after-load "projectile"
-  '(diminish 'projectile-mode "p"))
+  '(diminish 'projectile-mode "[PJ]"))
 
 
 (provide 'init-global-mode)

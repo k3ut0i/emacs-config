@@ -8,10 +8,7 @@
 (add-hook 'haskell-mode-hook 'smartparens-mode)
 (setq intero-stack-executable "/usr/bin/stack")
 
-(setq intero-mode-blacklist '("/home/keutoi/packs/source/ghc-ghc-8.0.1-release/"
-			      "/home/keutoi/.xmonad/"
-			      "/home/keutoi/Documents/Prog/algo/"
-			      "/home/keutoi/Documents/Prog/haskell/tutorial/"))
+(setq intero-mode-blacklist '("/home/keutoi/"))
 
 (provide 'init-haskell)
 ;;; init-haskell.el ends here

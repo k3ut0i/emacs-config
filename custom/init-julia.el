@@ -3,7 +3,6 @@
 
 
 ;;; Code:
-(require 'ess-site)
-(setq inferior-julia-program-name "/usr/bin/julia")
+
 (provide 'init-julia)
-;;; init-julia.el ends here.
+;;; init-julia.el ends here

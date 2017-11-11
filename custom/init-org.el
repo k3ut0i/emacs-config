@@ -73,8 +73,7 @@
    (scheme . t)
    (sqlite . t)
    (ditaa . t)
-   (plantuml . t)
-   (julia . t)))
+   (plantuml . t)))
 
 (setq org-plantuml-jar-path "/opt/plantuml/plantuml.jar")
 (setq org-ditaa-jar-path "/usr/share/java/ditaa/ditaa-0_9.jar")

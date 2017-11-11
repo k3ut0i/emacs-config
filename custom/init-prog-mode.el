@@ -12,7 +12,7 @@
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
 (eval-after-load "yasnippet"
-  '(diminish 'yas-minor-mode "y"))
+  '(diminish 'yas-minor-mode "[Y]"))
 
 (add-hook 'prog-mode-hook #'flycheck-mode)
 

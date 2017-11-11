@@ -46,6 +46,6 @@
 (helm-mode 1)
 
 (eval-after-load "helm-mode"
-  '(diminish 'helm-mode "h"))
+  '(diminish 'helm-mode "[H]"))
 (provide 'init-helm)
 ;;; init-helm.el ends here

@@ -9,7 +9,6 @@
 (add-hook 'prolog-mode-hook 'smartparens-mode)
 (add-to-list 'load-path
 	     "/usr/lib/mercury/elisp")
-(autoload 'mdb "gud" "Invoke the mercury debugger" t)
 
 (autoload 'run-prolog "prolog"
   "Start Prolog sub-process" t)
