@@ -12,16 +12,17 @@
 (add-to-list 'load-path
 	     (expand-file-name "custom" user-emacs-directory))
 
-;;; Start Server
-(server-start)
-
-
+;;; Start Server if one is not running yet.
+(require 'server)
+(unless (server-running-p)
+  (server-start))
 
 ;;; config files
 (let ((custom-config-files '(init-package
 			     init-helm
 			     init-w3m
 			     init-flycheck
+			     init-flymake
 			     init-projectile
 			     init-git
 			     init-global-mode
@@ -56,9 +57,10 @@
 			     init-julia
 			     init-coq
 			     init-smalltalk
+			     init-html
 
 			     init-comint
-
+			     init-diary
 			     init-abbrev
 			     init-skel
 			     init-prose)))
@@ -142,7 +144,7 @@ static char *gnus-pointer[] = {
      ("\\.pdf\\'" . "evince %s"))))
  '(package-selected-packages
    (quote
-    (julia-mode paredit xref-js2 synonyms smartparens shampoo rainbow-delimiters purescript-mode org julia-repl js2-refactor helm-projectile helm-gtags gxref ggtags flycheck-purescript flycheck-mercury flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
+    (ob-spice spice-mode arduino-mode company-arduino racket-mode geiser darkokai-theme monokai-alt-theme monokai-theme gist magit dante web-mode w3m slime slime-company julia-mode paredit xref-js2 synonyms smartparens shampoo rainbow-delimiters purescript-mode org julia-repl js2-refactor helm-projectile helm-gtags gxref ggtags flycheck-purescript flycheck-mercury flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
  '(safe-local-variable-values
    (quote
     ((eval progn

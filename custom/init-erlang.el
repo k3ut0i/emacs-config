@@ -10,6 +10,6 @@
 				    (smartparens-mode 1)))
 (require 'edts-start)
 (setq edts-man-root
-      "~/.emacs.d/edts/doc/20.0")
+      "/usr/lib/erlang/")
 (provide 'init-erlang)
 ;;; init-erlang.el ends here.

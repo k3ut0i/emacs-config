@@ -40,10 +40,15 @@
 
 (add-hook 'helm-minibuffer-set-up-hook
 	  'spacemacs//helm-hide-minibuffer-maybe)
-(setq helm-autoresize-max-height 0)
-(setq helm-autoresize-min-height 50)
+(setq helm-autoresize-max-height 0
+      helm-autoresize-min-height 50)
+
 (helm-autoresize-mode 1)
 (helm-mode 1)
+
+;; I need to figure out a way to ignore org buffers in buffer list.
+;; but also keep the org buffers in org-iswitchb list.
+;; (add-to-list 'helm-boring-buffer-regexp-list "\\\\*.org")
 
 (eval-after-load "helm-mode"
   '(diminish 'helm-mode "[H]"))
