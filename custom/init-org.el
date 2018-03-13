@@ -60,7 +60,7 @@
 	(?D . (:foreground "orange"))))
 
 
-(setq org-confirm-babel-evaluate nil)
+(setq org-confirm-babel-evaluate t)
 (add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
 (add-hook 'org-mode-hook 'org-display-inline-images)
 
@@ -68,9 +68,11 @@
  'org-babel-load-languages
  '((emacs-lisp . t)
    (C . t)
+   (R . t)
    (gnuplot . t)
    (lisp . t)
    (scheme . t)
+   (haskell . t)
    (sqlite . t)
    (ditaa . t)
    (plantuml . t)))

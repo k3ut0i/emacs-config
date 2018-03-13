@@ -28,6 +28,7 @@
 			     init-global-mode
 			     init-prog-mode
 			     init-gtags
+			     init-r
 			     init-c
 			     init-make
 			     init-cmake
@@ -58,6 +59,7 @@
 			     init-coq
 			     init-smalltalk
 			     init-html
+			     init-arduino
 
 			     init-comint
 			     init-diary
@@ -144,10 +146,11 @@ static char *gnus-pointer[] = {
      ("\\.pdf\\'" . "evince %s"))))
  '(package-selected-packages
    (quote
-    (ob-spice spice-mode arduino-mode company-arduino racket-mode geiser darkokai-theme monokai-alt-theme monokai-theme gist magit dante web-mode w3m slime slime-company julia-mode paredit xref-js2 synonyms smartparens shampoo rainbow-delimiters purescript-mode org julia-repl js2-refactor helm-projectile helm-gtags gxref ggtags flycheck-purescript flycheck-mercury flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
+    (flymake-lua flycheck-mmark gh-md markdown-mode ess ess-R-data-view ess-view helm-R inlineR r-autoyas company-cabal company-coq company-dcd company-erlang company-ghc company-ghci company-glsl company-lua clojure-snippets common-lisp-snippets elixir-yasnippets go-snippets haskell-snippets java-snippets yasnippet-snippets intero ob-spice spice-mode arduino-mode company-arduino racket-mode geiser darkokai-theme monokai-alt-theme monokai-theme gist magit dante web-mode w3m slime slime-company julia-mode paredit xref-js2 synonyms smartparens shampoo rainbow-delimiters purescript-mode org julia-repl js2-refactor helm-projectile helm-gtags gxref ggtags flycheck-purescript flycheck-mercury flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
  '(safe-local-variable-values
    (quote
-    ((eval progn
+    ((intero-targets "RWH:lib")
+     (eval progn
 	   (add-to-list
 	    (quote flycheck-gcc-include-path)
 	    (expand-file-name "../"))

@@ -17,7 +17,7 @@
 ;;; airline
 ;;(require 'airline-themes)
 ;;(load-theme 'airline-badwolf)
-(load-theme 'darkokai)
+(load-theme 'leuven)
 
 ;;; Major mode names shorten using Cyphejor
 ;;; Minor mode names
