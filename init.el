@@ -41,11 +41,13 @@
 			     init-org-page
 			     init-plantuml
 			     init-haskell
+			     init-prolog
 ;;			     init-mercury
 			     init-js
 			     init-purescript
 			     init-conf
 			     init-tex
+			     init-perl
 			     init-perl6
 			     init-sh
 			     init-sql
@@ -57,10 +59,15 @@
 			     init-rust
 			     init-julia
 			     init-coq
+			     init-agda
 			     init-smalltalk
 			     init-html
 			     init-arduino
+			     init-python
+			     init-xml
 
+			     init-outline
+			     init-magit
 			     init-comint
 			     init-diary
 			     init-abbrev
@@ -76,7 +83,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Ubuntu Mono derivative Powerline" :foundry "DAMA" :slant normal :weight normal :height 120 :width normal)))))
+ '(default ((t (:family "Ubuntu Mono derivative Powerline" :foundry "DAMA" :slant normal :weight normal :height 113 :width normal)))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -146,7 +153,7 @@ static char *gnus-pointer[] = {
      ("\\.pdf\\'" . "evince %s"))))
  '(package-selected-packages
    (quote
-    (flymake-lua flycheck-mmark gh-md markdown-mode ess ess-R-data-view ess-view helm-R inlineR r-autoyas company-cabal company-coq company-dcd company-erlang company-ghc company-ghci company-glsl company-lua clojure-snippets common-lisp-snippets elixir-yasnippets go-snippets haskell-snippets java-snippets yasnippet-snippets intero ob-spice spice-mode arduino-mode company-arduino racket-mode geiser darkokai-theme monokai-alt-theme monokai-theme gist magit dante web-mode w3m slime slime-company julia-mode paredit xref-js2 synonyms smartparens shampoo rainbow-delimiters purescript-mode org julia-repl js2-refactor helm-projectile helm-gtags gxref ggtags flycheck-purescript flycheck-mercury flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
+    (idris-mode coq-commenter ob-prolog ediprolog langtool company-plsense exec-path-from-shell keychain-environment flycheck-pycheckers ob-ipython python-mode flymake-lua flycheck-mmark gh-md markdown-mode ess ess-R-data-view ess-view helm-R inlineR r-autoyas company-cabal company-coq company-dcd company-erlang company-ghc company-ghci company-glsl company-lua clojure-snippets common-lisp-snippets elixir-yasnippets go-snippets haskell-snippets java-snippets yasnippet-snippets intero ob-spice spice-mode arduino-mode company-arduino racket-mode geiser darkokai-theme monokai-alt-theme monokai-theme gist magit dante web-mode w3m slime slime-company julia-mode paredit xref-js2 synonyms smartparens shampoo rainbow-delimiters purescript-mode org julia-repl js2-refactor helm-projectile helm-gtags gxref ggtags flycheck-purescript flycheck-mercury flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
  '(safe-local-variable-values
    (quote
     ((intero-targets "RWH:lib")

@@ -11,6 +11,7 @@
 	(ecl ("/usr/bin/ecl"))))
 (setq inferior-lisp-program "/usr/bin/sbcl")
 (setq slime-contribs '(slime-fancy))
+(setq slime-scratch-file "~/Documents/Prog/clisp/slime-scratch-file.lisp")
 (add-to-list 'slime-contribs 'slime-autodoc)
 
 
