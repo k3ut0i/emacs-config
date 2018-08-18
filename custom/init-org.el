@@ -11,7 +11,6 @@
 (require 'init-julia) ; for org babel julia invocation
 
 
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c c") 'org-capture)

@@ -3,6 +3,10 @@
 ;;; interface, look and feel configuration.
 
 ;;; Code:
+(require 'powerline)
+(powerline-default-theme)
+
+
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
@@ -17,7 +21,12 @@
 ;;; airline
 ;;(require 'airline-themes)
 ;;(load-theme 'airline-badwolf)
-(load-theme 'leuven)
+(require 'moe-theme)
+(setq moe-light-pure-white-background-in-terminal t)
+(powerline-moe-theme)
+(moe-light)
+(moe-theme-set-color 'cyan)
+(setq moe-theme-highlight-buffer-id t)
 
 ;;; Major mode names shorten using Cyphejor
 ;;; Minor mode names

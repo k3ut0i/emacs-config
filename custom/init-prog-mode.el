@@ -15,8 +15,8 @@
   '(diminish 'yas-minor-mode "[Y]"))
 
 (add-hook 'prog-mode-hook #'flycheck-mode)
-
+(add-hook 'prog-mode-hook #'linum-mode)
 (add-hook 'prog-mode-hook #'fci-mode)
-
+(add-hook 'prog-mode-hook #'hl-todo-mode)
 (provide 'init-prog-mode)
 ;;; init-prog-mode.el ends here

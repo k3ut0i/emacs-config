@@ -18,8 +18,6 @@
 ;; projectile
 
 (projectile-global-mode)
-(setq projectile-completion-system 'helm)
-(helm-projectile-on)
 (eval-after-load "projectile"
   '(diminish 'projectile-mode "[PJ]"))
 

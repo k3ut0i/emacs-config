@@ -6,7 +6,12 @@
 (add-hook 'c-mode-common-hook
 	  (lambda ()
 	    (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
-	      (smartparens-mode 1))))
+	      (smartparens-mode 1)
+	      (irony-mode)
+	      (irony-eldoc))))
+
+;; SMARTPARNS BUGG
+(setq sp-escape-quotes-after-insert nil)
 
 ;; (defun my:ac-c-headers-init ()
 ;;   "Enable autocompletion for c header files."

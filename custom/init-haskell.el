@@ -9,6 +9,7 @@
 ;;(setq intero-mode-blacklist '("/home/keutoi/"))
 
 (add-hook 'haskell-mode-hook 'smartparens-mode)
+;;(add-hook 'haskell-mode-hook 'structured-haskell-mode)
 ;;(add-hook 'haskell-mode-hook 'dante-mode)
 
 (provide 'init-haskell)

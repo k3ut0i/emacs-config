@@ -19,3 +19,5 @@ edts
 local
 .org-id-locations
 diary
+/bbdb
+/irony/bin/irony-server
