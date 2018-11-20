@@ -107,5 +107,11 @@
 
 (require 'ox-md)
 (add-to-list 'org-export-backends 'md)
+
+(require 'org-crypt)
+(org-crypt-use-before-save-magic)
+(setq org-tags-exclude-from-inheritance (quote ("crypt")))
+(setq org-crypt-key "E26A36BB")
+
 (provide 'init-org)
 ;;; init-org.el ends here

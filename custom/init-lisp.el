@@ -28,5 +28,6 @@
 
 (eval-after-load "paredit"
   '(diminish 'paredit-mode "[PE]"))
+(diminish 'eldoc-mode)
 (provide 'init-lisp)
 ;;; init-lisp.el ends here

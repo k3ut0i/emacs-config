@@ -15,6 +15,8 @@
 (eval-after-load "company"
   '(diminish 'company-mode "[C]"))
 
+;; Generic compile command
+(global-set-key (kbd "C-c C-g c") 'compile)
 ;; projectile
 
 (projectile-global-mode)

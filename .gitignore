@@ -21,3 +21,7 @@ local
 diary
 /bbdb
 /irony/bin/irony-server
+tramp
+network-security.data
+\#*\#
+.\#*

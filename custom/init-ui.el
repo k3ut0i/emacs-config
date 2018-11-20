@@ -3,8 +3,6 @@
 ;;; interface, look and feel configuration.
 
 ;;; Code:
-(require 'powerline)
-(powerline-default-theme)
 
 
 (menu-bar-mode -1)
@@ -12,22 +10,15 @@
 (scroll-bar-mode -1)
 (setq right-divider-width 0)
 (setq inhibit-startup-screen t)
+
+(setq-default cursor-type 'hbar)
 ;;(load-theme 'monokai)
 
 ;;; fci is enabled as a prog-mode-hook
 (setq fci-rule-width 1
       fci-rule-color "black")
 
-;;; airline
-;;(require 'airline-themes)
-;;(load-theme 'airline-badwolf)
-(require 'moe-theme)
-(setq moe-light-pure-white-background-in-terminal t)
-(powerline-moe-theme)
-(moe-light)
-(moe-theme-set-color 'cyan)
-(setq moe-theme-highlight-buffer-id t)
-
+(load-theme 'leuven)
 ;;; Major mode names shorten using Cyphejor
 ;;; Minor mode names
 ;;; diminish works but must be evaluated after the mode is enabled.
