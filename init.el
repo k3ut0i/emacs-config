@@ -12,79 +12,74 @@
 (add-to-list 'load-path
 	     (expand-file-name "custom" user-emacs-directory))
 (setq source-directory "~/packs/source/emacs/")
+
+
 ;;; Start Server if one is not running yet.
 (require 'server)
 (unless (server-running-p)
   (server-start))
 
 ;;; config files
-(let ((custom-config-files '(init-package
-			     ;;			     init-helm
-			     init-pomidor
-			     init-ivy
-			     init-w3m
-			     init-flycheck
-			     init-flymake
-			     init-projectile
-			     init-git
-			     init-global-mode
-			     init-prog-mode
-			     init-gtags
-			     init-r
-			     init-c
-			     init-make
-			     init-cmake
-			     init-geiser
-			     init-scheme
-			     init-racket
-			     init-lisp
-			     init-emacs-lisp
-			     init-common-lisp
-			     init-clojure
-			     init-org
-			     init-org-page
-			     init-plantuml
-			     init-haskell
-			     init-prolog
-;;			     init-mercury
-			     init-js
-			     init-purescript
-			     init-conf
-			     init-tex
-			     init-perl
-			     init-perl6
-			     init-sh
-			     init-sql
-			     init-lua
-			     init-erlang
-			     init-elixir
-			     init-ocaml
-			     init-nim
-			     init-scala
-			     init-rust
-			     init-julia
-			     init-coq
-			     init-agda
-			     init-idris
-			     init-smalltalk
-			     init-html
-			     init-arduino
-			     init-python
-			     init-xml
-
-			     init-mu4e
-			     init-bbdb
-			     
-;;			     init-gnus
-			     init-outline
-			     init-magit
-			     init-comint
-			     init-diary
-			     init-abbrev
-			     init-skel
-			     init-prose)))
-
-  (mapc #'require custom-config-files))
+(require 'init-package)
+(require 'init-pomidor)
+(require 'init-ivy)
+(require 'init-w3m)
+(require 'init-flycheck)
+(require 'init-flymake)
+(require 'init-projectile)
+(require 'init-git)
+(require 'init-global-mode)
+(require 'init-prog-mode)
+(require 'init-gtags)
+(require 'init-r)
+(require 'init-c)
+(require 'init-make)
+(require 'init-cmake)
+(require 'init-geiser)
+(require 'init-scheme)
+(require 'init-racket)
+(require 'init-lisp)
+(require 'init-emacs-lisp)
+(require 'init-common-lisp)
+(require 'init-clojure)
+(require 'init-org)
+(require 'init-org-page)
+(require 'init-plantuml)
+(require 'init-haskell)
+(require 'init-prolog)
+(require 'init-js)
+(require 'init-purescript)
+(require 'init-conf)
+(require 'init-tex)
+(require 'init-perl)
+(require 'init-perl6)
+(require 'init-sh)
+(require 'init-sql)
+(require 'init-lua)
+(require 'init-erlang)
+(require 'init-elixir)
+(require 'init-ocaml)
+(require 'init-nim)
+(require 'init-scala)
+(require 'init-rust)
+(require 'init-julia)
+(require 'init-coq)
+(require 'init-agda)
+(require 'init-idris)
+(require 'init-smalltalk)
+(require 'init-html)
+(require 'init-arduino)
+(require 'init-python)
+(require 'init-xml)
+(require 'init-mu4e)
+(require 'init-bbdb)
+(require 'init-outline)
+(require 'init-magit)
+(require 'init-comint)
+(require 'init-diary)
+(require 'init-abbrev)
+(require 'init-skel)
+(require 'init-prose)
 
 ;(require 'init-org-page)
 
@@ -187,7 +182,7 @@ static char *gnus-pointer[] = {
      ("\\.pdf\\'" . "evince %s"))))
  '(package-selected-packages
    (quote
-    (bbdb-vcard counsel-bbdb mu4e-alert mu4e-conversation mu4e-maildirs-extension use-package irony json-mode ledger-mode hledger-mode exwm xelb circe yaml-mode powerline anti-zenburn-theme moe-theme pomidor scribble-mode ivy-mpdel counsel counsel-gtags counsel-org-capture-string counsel-org-clock counsel-projectile flyspell-correct-ivy ivy-dired-history shm sicp tuareg flycheck-ocaml merlin merlin-eldoc utop hl-todo cov coverage plsense helm-themes flycheck-irony irony-eldoc rainbow-mode org-pomodoro mpdel bbdb-csv-import erc-colorize erc-crypt idris-mode coq-commenter ob-prolog ediprolog langtool company-plsense exec-path-from-shell keychain-environment flycheck-pycheckers ob-ipython flymake-lua flycheck-mmark gh-md markdown-mode ess ess-R-data-view ess-view helm-R inlineR r-autoyas company-cabal company-coq company-dcd company-erlang company-ghc company-ghci company-glsl company-lua clojure-snippets common-lisp-snippets elixir-yasnippets go-snippets haskell-snippets java-snippets intero ob-spice spice-mode arduino-mode company-arduino geiser darkokai-theme monokai-alt-theme monokai-theme gist magit dante w3m slime-company julia-mode paredit xref-js2 synonyms smartparens shampoo rainbow-delimiters purescript-mode julia-repl js2-refactor helm-projectile helm-gtags gxref flycheck-purescript flycheck-mercury flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
+    (esup bbdb-vcard counsel-bbdb mu4e-alert mu4e-conversation mu4e-maildirs-extension use-package irony json-mode ledger-mode hledger-mode exwm xelb circe yaml-mode powerline anti-zenburn-theme moe-theme pomidor scribble-mode ivy-mpdel counsel counsel-gtags counsel-org-capture-string counsel-org-clock counsel-projectile flyspell-correct-ivy ivy-dired-history shm sicp tuareg flycheck-ocaml merlin merlin-eldoc utop hl-todo cov coverage plsense helm-themes flycheck-irony irony-eldoc rainbow-mode org-pomodoro mpdel bbdb-csv-import erc-colorize erc-crypt idris-mode coq-commenter ob-prolog ediprolog langtool company-plsense exec-path-from-shell keychain-environment flycheck-pycheckers ob-ipython flymake-lua flycheck-mmark gh-md markdown-mode ess ess-R-data-view ess-view helm-R inlineR r-autoyas company-cabal company-coq company-dcd company-erlang company-ghc company-ghci company-glsl company-lua clojure-snippets common-lisp-snippets elixir-yasnippets go-snippets haskell-snippets java-snippets intero ob-spice spice-mode arduino-mode company-arduino geiser darkokai-theme monokai-alt-theme monokai-theme gist magit dante w3m slime-company julia-mode paredit xref-js2 synonyms smartparens shampoo rainbow-delimiters purescript-mode julia-repl js2-refactor helm-projectile helm-gtags gxref flycheck-purescript flycheck-mercury flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
  '(pdf-view-midnight-colors (quote ("#232333" . "#c7c7c7")))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
