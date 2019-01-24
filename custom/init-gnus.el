@@ -8,9 +8,7 @@
 ;; 				  (nnimap-split-methods default)
 ;; 				  (nnimap-expunge t)
 ;; 				  (nnimap-stream ssl)))
-(setq gnus-select-method '(nnimap "localhost"
-				  (nnimap-stream shell))
-      imap-shell-program "/usr/lib/dovecot/imap")
+(setq gnus-select-method '(nntp "news.eternal-september.org"))
 
 (provide 'init-gnus)
 ;;; init-gnus.el ends here

@@ -6,7 +6,8 @@
 (require 'bbdb)
 
 (bbdb-initialize 'mail 'mu4e 'message)
-(bbdb-insinuate-mail)
+
+(add-hook 'mail-setup-hook 'bbdb-insinuate-sendmail)
 (bbdb-insinuate-message)
 (bbdb-insinuate-mu4e)
 

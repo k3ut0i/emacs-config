@@ -22,7 +22,8 @@
 ;;; config files
 (require 'init-package)
 (require 'init-pomidor)
-(require 'init-ivy)
+;;(require 'init-ivy)
+(require 'init-helm)
 (require 'init-w3m)
 (require 'init-flycheck)
 (require 'init-flymake)
@@ -67,10 +68,12 @@
 (require 'init-agda)
 (require 'init-idris)
 (require 'init-smalltalk)
+(require 'init-apl)
 (require 'init-html)
 (require 'init-arduino)
 (require 'init-python)
 (require 'init-xml)
+(require 'init-gnus)
 (require 'init-mu4e)
 (require 'init-bbdb)
 (require 'init-outline)
@@ -182,7 +185,7 @@ static char *gnus-pointer[] = {
      ("\\.pdf\\'" . "evince %s"))))
  '(package-selected-packages
    (quote
-    (esup bbdb-vcard counsel-bbdb mu4e-alert mu4e-conversation mu4e-maildirs-extension use-package irony json-mode ledger-mode hledger-mode exwm xelb circe yaml-mode powerline anti-zenburn-theme moe-theme pomidor scribble-mode ivy-mpdel counsel counsel-gtags counsel-org-capture-string counsel-org-clock counsel-projectile flyspell-correct-ivy ivy-dired-history shm sicp tuareg flycheck-ocaml merlin merlin-eldoc utop hl-todo cov coverage plsense helm-themes flycheck-irony irony-eldoc rainbow-mode org-pomodoro mpdel bbdb-csv-import erc-colorize erc-crypt idris-mode coq-commenter ob-prolog ediprolog langtool company-plsense exec-path-from-shell keychain-environment flycheck-pycheckers ob-ipython flymake-lua flycheck-mmark gh-md markdown-mode ess ess-R-data-view ess-view helm-R inlineR r-autoyas company-cabal company-coq company-dcd company-erlang company-ghc company-ghci company-glsl company-lua clojure-snippets common-lisp-snippets elixir-yasnippets go-snippets haskell-snippets java-snippets intero ob-spice spice-mode arduino-mode company-arduino geiser darkokai-theme monokai-alt-theme monokai-theme gist magit dante w3m slime-company julia-mode paredit xref-js2 synonyms smartparens shampoo rainbow-delimiters purescript-mode julia-repl js2-refactor helm-projectile helm-gtags gxref flycheck-purescript flycheck-mercury flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
+    (gnu-apl-mode intero flycheck-nim nim-mode ob-nim flycheck-plantuml plantuml-mode flycheck-perl6 perl6-mode helm-ag ag counsel-etags counsel-tramp org-projectile-helm projectile-ripgrep rcirc-color rcirc-menu rcirc-notify esup bbdb-vcard counsel-bbdb mu4e-alert mu4e-conversation mu4e-maildirs-extension use-package hledger-mode circe yaml-mode powerline anti-zenburn-theme moe-theme pomidor scribble-mode ivy-mpdel counsel counsel-gtags counsel-org-capture-string counsel-org-clock counsel-projectile ivy-dired-history shm tuareg flycheck-ocaml cov coverage plsense helm-themes flycheck-irony irony-eldoc rainbow-mode org-pomodoro bbdb-csv-import erc-colorize erc-crypt coq-commenter ob-prolog ediprolog langtool company-plsense exec-path-from-shell keychain-environment ob-ipython flymake-lua flycheck-mmark gh-md ess ess-R-data-view helm-R inlineR r-autoyas company-cabal company-coq company-dcd company-erlang company-ghc company-ghci company-glsl company-lua clojure-snippets common-lisp-snippets elixir-yasnippets go-snippets haskell-snippets java-snippets ob-spice spice-mode arduino-mode company-arduino darkokai-theme monokai-alt-theme monokai-theme gist magit dante slime-company paredit xref-js2 synonyms shampoo rainbow-delimiters js2-refactor helm-gtags gxref flycheck-purescript flycheck-julia fill-column-indicator ensime edts diminish cyphejor color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
  '(pdf-view-midnight-colors (quote ("#232333" . "#c7c7c7")))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")

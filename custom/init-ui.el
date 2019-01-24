@@ -18,7 +18,7 @@
 (setq fci-rule-width 1
       fci-rule-color "black")
 
-(load-theme 'wombat)
+(load-theme 'dichromacy)
 ;;; Major mode names shorten using Cyphejor
 ;;; Minor mode names
 ;;; diminish works but must be evaluated after the mode is enabled.

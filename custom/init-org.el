@@ -74,7 +74,8 @@
    (haskell . t)
    (sqlite . t)
    (ditaa . t)
-   (plantuml . t)))
+   (plantuml . t)
+   (shell . t)))
 
 (setq org-plantuml-jar-path "/opt/plantuml/plantuml.jar")
 (setq org-ditaa-jar-path "/usr/share/java/ditaa/ditaa-0_9.jar")
