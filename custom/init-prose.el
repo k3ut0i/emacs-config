@@ -6,9 +6,9 @@
 ;;; Code:
 
 ;; synonym pack config
-(setq synonyms-file "~/.emacs.d/resources/mthesaur.txt")
-(setq synonyms-cache-file "~/.emacs.d/resources/mthesaur_cache.txt")
-(require 'synonyms)
+;; (setq synonyms-file "~/.emacs.d/resources/mthesaur.txt")
+;; (setq synonyms-cache-file "~/.emacs.d/resources/mthesaur_cache.txt")
+;; (require 'synonyms)
 
 (provide 'init-prose)
 ;;; init-prose.el ends here.

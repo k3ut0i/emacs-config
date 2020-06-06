@@ -3,8 +3,8 @@
 
 
 ;;; Code:
-(load "~/.emacs.d/local/PG/generic/proof-site")
-(add-hook 'coq-mode-hook 'smartparens-mode)
+(use-package proof-general
+  :hook coq-mode)
 
 (provide 'init-coq)
 ;;; init-coq.el ends here.

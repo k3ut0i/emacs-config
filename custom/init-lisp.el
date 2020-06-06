@@ -17,14 +17,16 @@
   (add-hook hook #'enable-paredit-mode)
   (add-hook hook (lambda ()
 		   (flycheck-mode -1)))
-  (add-hook hook #'rainbow-delimiters-mode))
+;  (add-hook hook #'rainbow-delimiters-mode)
+  )
 
 (add-hook 'emacs-lisp-mode-hook #'eldoc-mode)
 (add-hook 'lisp-interaction-mode-hook #'eldoc-mode)
 (dolist (hook '(geiser-repl-mode-hook
 		inferior-scheme-mode-hook
 		lisp-interaction-mode-hook))
-  (add-hook hook #'rainbow-delimiters-mode))
+  ;(add-hook hook #'rainbow-delimiters-mode)
+  )
 
 (eval-after-load "paredit"
   '(diminish 'paredit-mode "[PE]"))

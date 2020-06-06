@@ -3,7 +3,7 @@
 ;;; common config for all programming modes
 
 ;;; Code:
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+;(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook 'show-smartparens-global-mode)
 (require 'yasnippet)
 (yas-reload-all)
