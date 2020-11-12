@@ -9,8 +9,10 @@
 	      (smartparens-mode 1)
 	      (irony-mode)
 	      (irony-eldoc))))
+;(add-to-list 'ff-search-directories "/usr/include/c++/*/")
+(global-set-key (kbd "C-c o") 'ff-find-other-file)
 
-;; SMARTPARNS BUGG
+;; SMARTPARENS BUGG
 (setq sp-escape-quotes-after-insert nil)
 
 ;; (defun my:ac-c-headers-init ()

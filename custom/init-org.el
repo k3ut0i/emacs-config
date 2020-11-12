@@ -7,6 +7,7 @@
 (require 'org-capture)
 (require 'org-clock)
 (require 'org-archive)
+(require 'org-tempo); for snippets
 (require 'package)
 (require 'init-julia) ; for org babel julia invocation
 
@@ -16,17 +17,17 @@
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c b") 'org-iswitchb)
 
-(setq org-directory "~/Documents/org")
+(setq org-directory "~/documents/org")
 (setq org-agenda-files
       (list org-directory))
 
 (setq org-default-notes-file (expand-file-name "notes.org" org-directory))
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/Documents/org/gtd.org" "Tasks")
+      '(("t" "Todo" entry (file+headline "~/documents/org/gtd.org" "Tasks")
 	 "* TODO %?\n %i\n %a" :clock-in t :clock-resume t)
-	("j" "Journal" entry (file+datetree "~/Documents/org/journal.org")
+	("j" "Journal" entry (file+datetree "~/documents/org/journal.org")
 	 "* %?\nEntered on %U\n %i\n %a")
-	("s" "Secure" entry (file+datetree "~/Documents/org/secure.org" "Secure")
+	("s" "Secure" entry (file+datetree "~/documents/org/secure.org" "Secure")
 	 "* %?\nEntered on %U\n %i\n %a")))
 
 (setq org-log-done 'time)
@@ -36,7 +37,7 @@
 (setq org-clock-out-remove-zero-time-clocks t)
 
 (setq org-archive-mark-done nil)
-(setq org-archive-location "~/Documents/org/archive.org::* From %s")
+(setq org-archive-location "~/documents/org/archive.org::* From %s")
 
 (setq org-refile-targets
       '((nil :maxlevel . 9)
@@ -75,7 +76,8 @@
    (sqlite . t)
    (ditaa . t)
    (plantuml . t)
-   (shell . t)))
+   (shell . t)
+   (prolog . t)))
 
 (setq org-plantuml-jar-path "/opt/plantuml/plantuml.jar")
 (setq org-ditaa-jar-path "/usr/share/java/ditaa/ditaa-0_9.jar")

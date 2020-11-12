@@ -12,13 +12,12 @@
 (setq inhibit-startup-screen t)
 
 (setq-default cursor-type 'box)
-;;(load-theme 'monokai)
+(load-theme 'sanityinc-solarized-dark)
 
 ;;; fci is enabled as a prog-mode-hook
 (setq fci-rule-width 1
       fci-rule-color "black")
 
-(load-theme 'dichromacy)
 ;;; Major mode names shorten using Cyphejor
 ;;; Minor mode names
 ;;; diminish works but must be evaluated after the mode is enabled.
