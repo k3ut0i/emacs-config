@@ -8,5 +8,8 @@
 ;; does inherit emacs load-path, but for writing better emacs-lisp
 ;; packages it's recommanded to use Cask.
 
+(define-key lisp-interaction-mode-map "\C-c\C-j"
+  'eval-print-last-sexp)
+
 (provide 'init-emacs-lisp)
 ;;; init-emacs-lisp.el ends here

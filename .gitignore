@@ -1,5 +1,4 @@
 *\~
-snippets
 auto-save-list
 elpa
 ac-comphist.dat
@@ -27,3 +26,4 @@ network-security.data
 .\#*
 /metal-mercury-mode/
 /transient/
+.lsp-session*

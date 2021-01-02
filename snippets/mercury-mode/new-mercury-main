@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: new mercury main
+# key: new
+# --
+:- module($1).
+:- interface.
+:- import_module(io).
+:- pred main(io::di, io::uo) is det.
+$2
+:- implementation.
+
+main(!IO) :- $3.

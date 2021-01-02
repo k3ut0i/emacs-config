@@ -27,7 +27,9 @@
 (setq auto-mode-alist (cons '("\\.m$" . mercury-mode)
 			    auto-mode-alist))
 (add-to-list 'load-path "~/.emacs.d/metal-mercury-mode/")
-(require 'metal-mercury-mode)
-(add-hook 'mercury-mode-hook 'metal-mercury-mode)
+(require 'flycheck-mercury)
+;; (require 'mercury-font-lock)
+;; (add-hook 'mercury-mode-hook '(lambda ()
+;; 				(turn-on-mercury-font-lock)))
 (provide 'init-mercury)
 ;;; init-mercury.el ends here

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ediprolog-query
+# key: ?
+# --
+%?- $1.

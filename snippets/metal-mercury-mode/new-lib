@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: new-lib
+# key: lib
+# --
+:- module($1).
+:- interface.
+:- import_module $2.
+
+
+:- implementation.

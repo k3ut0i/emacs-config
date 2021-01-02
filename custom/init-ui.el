@@ -12,7 +12,7 @@
 (setq inhibit-startup-screen t)
 
 (setq-default cursor-type 'box)
-(load-theme 'sanityinc-solarized-dark)
+(load-theme 'monokai)
 
 ;;; fci is enabled as a prog-mode-hook
 (setq fci-rule-width 1

@@ -1,0 +1,9 @@
+# key: new
+# name: new-file
+# --
+;;; package --- initalization configuration for $1
+;;; Commentary:
+
+;;; Code:
+
+(provide 'init-$1)

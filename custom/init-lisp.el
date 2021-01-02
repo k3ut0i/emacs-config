@@ -17,7 +17,7 @@
   (add-hook hook #'enable-paredit-mode)
   (add-hook hook (lambda ()
 		   (flycheck-mode -1)))
-;  (add-hook hook #'rainbow-delimiters-mode)
+  (add-hook hook #'rainbow-delimiters-mode)
   )
 
 (add-hook 'emacs-lisp-mode-hook #'eldoc-mode)

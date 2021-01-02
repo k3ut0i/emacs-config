@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: io-predicate
+# key: io
+# --
+:- pred $1($2io::di, io::uo) is det.

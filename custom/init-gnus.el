@@ -8,7 +8,7 @@
 ;; 				  (nnimap-split-methods default)
 ;; 				  (nnimap-expunge t)
 ;; 				  (nnimap-stream ssl)))
-(setq gnus-select-method '(nntp "news.eternal-september.org"))
+(setq gnus-select-method '(nntp "news.gmane.io"))
 
 (provide 'init-gnus)
 ;;; init-gnus.el ends here

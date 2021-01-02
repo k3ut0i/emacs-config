@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: import_module
+# key: im
+# --
+:- import_module $1.
