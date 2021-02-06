@@ -78,7 +78,8 @@
    (plantuml . t)
    (shell . t)
    (prolog . t)
-   (ess-julia . t)))
+   (ess-julia . t)
+   (perl . t)))
 
 (setq org-plantuml-jar-path "/opt/plantuml/plantuml.jar")
 (setq org-ditaa-jar-path "/usr/share/java/ditaa/ditaa-0_9.jar")

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: new-test-file
+# key: newt
+# --
+# -*- mode: perl; cpel-indent-level: 4 -*-
+use strict;
+use warnings;
+use Test::More;
+
+$0
