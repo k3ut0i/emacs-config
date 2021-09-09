@@ -3,8 +3,8 @@
 
 ;;; Code:
 (require 'company)
-(setq merlin-command "/home/keutoi/.opam/system/bin/ocamlmerlin")
-(setq utop-command "/home/keutoi/.opam/system/bin/utop -emacs")
+(setq merlin-command 'opam)
+(setq utop-command 'opam)
 (setenv "CAML_LD_LIBRARY_PATH"
 	"/usr/lib/ocaml/stublibs:/home/keutoi/.opam/system/lib/stublibs")
 
@@ -12,7 +12,6 @@
 (add-hook 'caml-mode-hook 'merlin-mode)
 (add-hook 'merlin-mode-hook (lambda ()
 			      (flycheck-mode -1)
-			      (utop-minor-mode)
 			      (company-mode)))
 
 (add-to-list 'auto-mode-alist '("dune" . tuareg-dune-mode))

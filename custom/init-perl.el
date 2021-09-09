@@ -10,7 +10,6 @@
 
 (setq cperl-electric-parens t
       cperl-electric-keywords t)
-
 ;; (require 'plsense)
 ;; (setq plsense-popup-help-key "C-:")
 ;; (setq plsense-display-help-buffer-key "M-:")

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: perl-new-test
+# key: pnt
+# --
+# -*- mode: cperl; cperl-indent-level: 4 -*-
+use strict;
+use warnings;
+use Test::More;
+
+$0

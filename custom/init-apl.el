@@ -12,6 +12,6 @@
 (add-hook 'gnu-apl-mode-hook (lambda ()
 			       (em-gnu-apl-init)
 			       (set-input-method 'APL-Z)))
-
+(setq gnu-apl-executable "~/packs/source/gnu-apl/trunk/src/apl")
 (provide 'init-apl)
 ;;; init-apl.el ends here

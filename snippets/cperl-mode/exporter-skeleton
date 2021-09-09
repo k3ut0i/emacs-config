@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: exporter-skeleton
+# key: exp
+# --
+use Exporter;
+our @ISA = 'Exporter';
+our @EXPORT = qw($1);
+
+$0

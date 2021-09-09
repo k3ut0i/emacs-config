@@ -17,9 +17,9 @@
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c b") 'org-iswitchb)
 
-(setq org-directory "~/documents/org")
-(setq org-agenda-files
-      (list org-directory))
+(setq org-directory "~/documents/org/")
+(setq org-agenda-files (append org-agenda-files
+			       (list org-directory)))
 
 (setq org-default-notes-file (expand-file-name "notes.org" org-directory))
 (setq org-capture-templates

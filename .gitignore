@@ -27,3 +27,8 @@ network-security.data
 /metal-mercury-mode/
 /transient/
 .lsp-session*
+meghanada
+projects
+.apl.history
+.dap-breakpoints
+.cache

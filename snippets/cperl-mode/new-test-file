@@ -8,3 +8,5 @@ use warnings;
 use Test::More;
 
 $0
+
+done_testing();

@@ -10,6 +10,7 @@
 
 (define-key lisp-interaction-mode-map "\C-c\C-j"
   'eval-print-last-sexp)
-
+(define-key emacs-lisp-mode-map "\C-c\C-b"
+  'eval-buffer)
 (provide 'init-emacs-lisp)
 ;;; init-emacs-lisp.el ends here

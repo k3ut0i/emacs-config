@@ -3,8 +3,8 @@
 
 ;;; Code:
 
-(setq-default fstar-executable "~/packs/bin/fstar/bin/fstar.exe")
-(setq-default fstar-smt-executable "~/packs/bin/fstar/bin/z3")
-(setq-default fstar-flycheck-checker 'fstar)
-(setq-default fstar-subp-prover-args '("--include ~/packs/bin/fstar/ulib/"))
+(setq fstar-executable "~/packs/bin/fstar/bin/fstar.exe")
+(setq fstar-smt-executable "~/packs/bin/fstar/bin/z3")
+(setq fstar-flycheck-checker 'fstar)
+(setenv "PATH" (string-join (list "/home/keutoi/packs/bin/fstar/bin/" ":" (getenv "PATH"))))
 (provide 'init-fstar)
