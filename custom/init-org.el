@@ -50,16 +50,7 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "INIT(i)" "PAUS(p)"
 		  "|" "DONE(d)" "DEAD(k)")))
-(setq org-highest-priority ?A)
-(setq org-lowest-priority ?D)
-(setq org-default-priority ?D)
-(setq org-priority-faces
-      '((?A . (:foreground "black" :background "red" :weight bold :underline t))
-	(?B . (:foreground "red"))
-	(?C . (:foreground "green"))
-	(?D . (:foreground "orange"))))
-
-
+(setq org-priority-default ?C)
 (setq org-confirm-babel-evaluate t)
 (add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
 (add-hook 'org-mode-hook 'org-display-inline-images)

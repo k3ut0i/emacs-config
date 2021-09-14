@@ -17,5 +17,7 @@
   (when-let ((sock-file-names (file-expand-wildcards "/tmp/ssh-*/agent.*")))
     (setenv "SSH_AUTH_SOCK" (car sock-file-names))))
 (get-ssh-agent-env)
+(custom-set-faces '(magit-section-highlight ((t (:extend t :background "grey20" :foreground "orchid3")))))
+
 (provide 'init-magit)
 ;;; init-magit.el ends here
